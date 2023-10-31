@@ -31,26 +31,35 @@
     transform: translateY(-20px);
   }
 }
-.hello {
-  font-family: "Montserrat Medium";
-  transform: scale(0.94);
-  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
-@keyframes scale {
-  100% {
-    transform: scale(1);
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
-.hello1 {
-  opacity: 0;
-  filter: blur(4px);
-}
-.hello1:nth-child(1) {
-  animation: fade-in 0.8s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-@keyframes fade-in {
-  100% {
-    opacity: 1;
-    filter: blur(0);
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
   }
 }
+
