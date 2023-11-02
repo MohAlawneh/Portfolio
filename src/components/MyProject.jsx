@@ -3,14 +3,14 @@ import "./myprojects.css";
 const MyProject = () => {
   return (
     <>
-      <div className="flex justify-center mb-7">
+      <div className="flex justify-center mb-20 mt-20">
         <div className="typewriter">
           <h1 className="my-project">My Projects!</h1>
         </div>
       </div>
       <div className=" flex justify-center gap-40">
         <div className="card-container">
-          <div className="card">
+          <div className="card text-center">
             <h1>Wash My Ride</h1>
             <br />
             <p>
@@ -29,7 +29,6 @@ const MyProject = () => {
                     src="https://img.icons8.com/color/48/github--v1.png"
                     alt="github--v1"
                   />
-                  github
                 </span>
               </a>
             </p>
@@ -48,7 +47,7 @@ const MyProject = () => {
           </div>
         </div>
         <div className="card-container">
-          <div className="card">
+          <div className="card text-center">
             <h1>Socioverse</h1>
             <br />
             <p>
@@ -66,7 +65,6 @@ const MyProject = () => {
                     src="https://img.icons8.com/color/48/github--v1.png"
                     alt="github--v1"
                   />
-                  github
                 </span>
               </a>
             </p>
