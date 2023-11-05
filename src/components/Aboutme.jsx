@@ -48,7 +48,7 @@ const Aboutme = () => {
                   <img
                     width="48"
                     height="48"
-                    className=" hover:w-20 hover:cursor-pointer"
+                    className=" hover:w-20"
                     src="https://img.icons8.com/doodle/48/linkedin--v2.png"
                     alt="linkedin--v2"
                   />
@@ -57,7 +57,7 @@ const Aboutme = () => {
                   <img
                     width="48"
                     height="48"
-                    className=" hover:w-21 hover:cursor-pointer"
+                    className=" hover:w-20"
                     src="https://img.icons8.com/doodle/48/github--v1.png"
                     alt="github--v1"
                   />

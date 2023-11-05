@@ -8,9 +8,9 @@ const MyProject = () => {
           <h1 className=" font-extrabold">My Projects!</h1>
         </div>
       </div>
-      <div className=" flex justify-center gap-40">
+      <div className=" flex justify-center gap-40 projects">
         <div className="card-container">
-          <div className="card text-center">
+          <div className="card text-center text-container">
             <h1>Wash My Ride</h1>
             <br />
             <p>
@@ -47,7 +47,7 @@ const MyProject = () => {
           </div>
         </div>
         <div className="card-container">
-          <div className="card text-center">
+          <div className="card text-center text-container">
             <h1>Socioverse</h1>
             <br />
             <p>

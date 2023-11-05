@@ -37,6 +37,7 @@ const ContactMe = () => {
                 <a
                   href="https://www.linkedin.com/in/moha-alawneh/"
                   target="_blank"
+                  className=" cursor-pointer"
                 >
                   <div className="mx-auto mb-12 text-center lg:mb-0">
                     <img
@@ -46,10 +47,14 @@ const ContactMe = () => {
                       src="https://img.icons8.com/color/48/linkedin-circled--v1.png"
                       alt="linkedin-circled--v1"
                     />
-                    <h6 className="font-medium">Linkedin</h6>
+                    <h6 className="font-medium text-white">Linkedin</h6>
                   </div>
                 </a>
-                <a href="https://github.com/MohAlawneh" target="_blank">
+                <a
+                  href="https://github.com/MohAlawneh"
+                  target="_blank"
+                  className=" cursor-pointer"
+                >
                   <div className="mx-auto mb-12 text-center lg:mb-0">
                     <img
                       className=" ml-auto mr-auto"
@@ -58,10 +63,14 @@ const ContactMe = () => {
                       src="https://img.icons8.com/color/48/github--v1.png"
                       alt="github--v1"
                     />
-                    <h6 className="font-medium">Github</h6>
+                    <h6 className="font-medium text-white">Github</h6>
                   </div>
                 </a>
-                <a href="tel:+962786482809" target="_blank">
+                <a
+                  href="tel:+962786482809"
+                  target="_blank"
+                  className=" cursor-pointer"
+                >
                   <div className="mx-auto mb-6 text-center md:mb-0">
                     <img
                       className=" ml-auto mr-auto"
@@ -70,10 +79,14 @@ const ContactMe = () => {
                       src="https://img.icons8.com/color/48/apple-phone.png"
                       alt="apple-phone"
                     />
-                    <h6 className="font-medium">+ 962 78 6482 809</h6>
+                    <h6 className="font-medium text-white">
+                      + 962 78 6482 809
+                    </h6>
                   </div>
                 </a>
                 <a
+                  className=" cursor-pointer"
+
                   href="mailto:mohammadwalid.alawneh@gmail.com"
                   target="_blank"
                 >
@@ -85,7 +98,7 @@ const ContactMe = () => {
                       src="https://img.icons8.com/color/48/gmail--v1.png"
                       alt="gmail--v1"
                     />
-                    <h6 className="font-medium">
+                    <h6 className="font-medium text-white">
                       mohammadwalid.alawneh@gmail.com
                     </h6>
                   </div>
@@ -96,13 +109,13 @@ const ContactMe = () => {
                   <div className="relative mb-6" data-te-input-wrapper-init>
                     <input
                       type="text"
-                      name="user_name"
+                      name="from_name"
                       className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 input-message"
                       id="exampleInput90"
                       placeholder="Name"
                     />
                     <label
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-black transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
                       htmlFor="exampleInput90"
                     >
                       Name
@@ -114,10 +127,10 @@ const ContactMe = () => {
                       className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 input-message"
                       id="exampleInput91"
                       placeholder="Email address"
-                      name="user_email"
+                      name="email"
                     />
                     <label
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-black transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
                       htmlFor="exampleInput91"
                     >
                       Email address
@@ -133,7 +146,7 @@ const ContactMe = () => {
                     ></textarea>
                     <label
                       htmlFor="exampleFormControlTextarea1"
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-black transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
                     >
                       Message
                     </label>
