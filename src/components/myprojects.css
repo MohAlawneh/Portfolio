@@ -69,3 +69,8 @@
   margin: 2em 1em;
   white-space: nowrap;
 }
+.input-message[type="text"],
+.input-message[type="email"],
+#exampleFormControlTextarea1 {
+  background-color: wheat;
+}

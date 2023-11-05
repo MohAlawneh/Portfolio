@@ -5,7 +5,7 @@ const MyProject = () => {
     <>
       <div className="flex justify-center mb-20 mt-20">
         <div className="typewriter">
-          <h1 className="my-project">My Projects!</h1>
+          <h1 className=" font-extrabold">My Projects!</h1>
         </div>
       </div>
       <div className=" flex justify-center gap-40">

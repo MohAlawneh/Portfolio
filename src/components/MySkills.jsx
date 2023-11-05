@@ -48,7 +48,7 @@ const MySkills = () => {
     <>
       <div className="flex justify-center mb-7 mt-20">
         <div className="typewriter">
-          <h1 className="my-project">My Skills!</h1>
+          <h1>My Skills!</h1>
         </div>
       </div>
       <div className="flex justify-center mb-7 mt-20">
