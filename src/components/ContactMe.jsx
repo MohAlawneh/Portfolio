@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactMe = () => {
   const form = useRef();
+  const [thanks, setThanks] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
     console.log(form.current);
@@ -15,7 +16,10 @@ const ContactMe = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setThanks(true);
+          setTimeout(() => {
+            setThanks(false);
+          }, 5000);
         },
         (error) => {
           console.log(error.text);
@@ -86,7 +90,6 @@ const ContactMe = () => {
                 </a>
                 <a
                   className=" cursor-pointer"
-
                   href="mailto:mohammadwalid.alawneh@gmail.com"
                   target="_blank"
                 >
@@ -107,36 +110,29 @@ const ContactMe = () => {
               <div className="mx-auto max-w-[700px]">
                 <form ref={form} onSubmit={sendEmail}>
                   <div className="relative mb-6" data-te-input-wrapper-init>
+                    <label htmlFor="exampleInput90">Name</label>
                     <input
                       type="text"
                       name="from_name"
                       className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 input-message"
                       id="exampleInput90"
                       placeholder="Name"
+                      required
                     />
-                    <label
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-black transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                      htmlFor="exampleInput90"
-                    >
-                      Name
-                    </label>
                   </div>
                   <div className="relative mb-6" data-te-input-wrapper-init>
+                    <label htmlFor="exampleInput91">Email address</label>
                     <input
                       type="email"
                       className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 input-message"
                       id="exampleInput91"
                       placeholder="Email address"
                       name="email"
+                      required
                     />
-                    <label
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-black transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                      htmlFor="exampleInput91"
-                    >
-                      Email address
-                    </label>
                   </div>
                   <div className="relative mb-6" data-te-input-wrapper-init>
+                    <label htmlFor="exampleFormControlTextarea1">Message</label>
                     <textarea
                       className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                       id="exampleFormControlTextarea1"
@@ -144,12 +140,6 @@ const ContactMe = () => {
                       placeholder="Your message"
                       name="message"
                     ></textarea>
-                    <label
-                      htmlFor="exampleFormControlTextarea1"
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-black transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                    >
-                      Message
-                    </label>
                   </div>
                   <button
                     onClick={sendEmail}
@@ -161,6 +151,15 @@ const ContactMe = () => {
                     Send
                   </button>
                 </form>
+                {thanks && (
+                  <div className="flex justify-center mt-20 text-green-600">
+                    <div className="typewriter">
+                      <h1 className=" font-extrabold ">
+                        Thank You I Will Reply ASAP 😍😍
+                      </h1>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>

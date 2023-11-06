@@ -42,6 +42,14 @@ const allSkills = [
     img: "https://img.icons8.com/nolan/96/tailwind_css.png",
     name: "Tailwind",
   },
+  {
+    img: "https://img.icons8.com/nolan/96/express-js.png",
+    name: "Express.JS",
+  },
+  {
+    img: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-color-tal-revivo.png",
+    name: "jQuery",
+  },
 ];
 const MySkills = () => {
   return (
