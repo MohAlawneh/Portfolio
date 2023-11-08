@@ -108,16 +108,40 @@ const Project1 = ({ open, setOpen, newClass }) => {
               Built using
             </h5>
             <div className="mb-3 font-bold flex">
-              <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-              <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" />
-              <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-              <img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-              <img src="https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white" />
+              <img
+                src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                className="w-[7vw] h-[5vh]"
+              />
+              <img
+                src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"
+                className="w-[7vw] h-[5vh]"
+              />
+              <img
+                src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
+                className="w-[7vw] h-[5vh]"
+              />
+              <img
+                src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
+                className="w-[7vw] h-[5vh]"
+              />
+              <img
+                src="https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white"
+                className="w-[7vw] h-[5vh]"
+              />
             </div>
             <div className="mb-3 font-bold flex">
-              <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-              <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-              <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
+              <img
+                src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                className="w-[7vw] h-[5vh]"
+              />
+              <img
+                src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                className="w-[7vw] h-[5vh]"
+              />
+              <img
+                src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
+                className="w-[7vw] h-[5vh]"
+              />
             </div>
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Live Demo
@@ -145,6 +169,7 @@ const Project1 = ({ open, setOpen, newClass }) => {
               <a
                 href="https://github.com/Tokens-Army/MERAKI_Academy_Project_5"
                 target="_blank"
+                className="w-full"
               >
                 https://github.com/Tokens-Army/MERAKI_Academy_Project_5
               </a>
@@ -167,7 +192,7 @@ const Project2 = ({ open1, setOpen1 }) => {
   return (
     <div id="myModal" className={open1 ? "OpenModal" : "modal"}>
       <div className="modal-content">
-        <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-full">
           <a href="#">
             <img className="w-full rounded-t-lg" src={socioverse} />
           </a>
@@ -175,15 +200,33 @@ const Project2 = ({ open1, setOpen1 }) => {
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Built using
             </h5>
-            <div className="mb-3 font-bold flex">
-              <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-              <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white " />
-              <img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+            <div className="mb-3 font-bold w-full flex">
+              <img
+                src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                className="w-[7vw] h-[5vh]"
+              />
+              <img
+                src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white "
+                className="w-[7vw] h-[5vh]"
+              />
+              <img
+                src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
+                className="w-[7vw] h-[5vh]"
+              />
             </div>
             <div className="mb-3 font-bold flex">
-              <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-              <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-              <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
+              <img
+                src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                className="w-[7vw] h-[5vh]"
+              />
+              <img
+                src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                className="w-[7vw] h-[5vh]"
+              />
+              <img
+                src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
+                className="w-[7vw] h-[5vh]"
+              />
             </div>
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Github
